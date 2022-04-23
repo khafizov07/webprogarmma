@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contacts</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="nav-menu">
+        <div class="container nav-menu-inside">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg"></a>
+            </div>
+            <a role="button" class="mobile-menu"></a>
+            <ul class="menu">
+                <li><a href="moving.html">Moving</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a class="qwerty" href="index.html#support">Dispatch</a></li>
+                <li><a class="qwerty" href="index.html#ourRoutes">Our Routes</a></li>
+                <li><a href="carrer.html">Career</a></li>
+                <li><a href="contacts.html">Contact US</a></li>
+                <li class="mobile-set">
+                    <a href="https://www.yelp.com/biz/wiser-group-los-angeles?osq=wiser+group"><i
+                            class="fab fa-yelp"></i></a>
+                    <a href="https://www.facebook.com/wisergroupllc/"><i class="fab fa-facebook-f"></i></a>
+                </li>
+            </ul>
+            <ul class="set">
+                <li><a href="tel:+16699004040"><i class="fas fa-phone"></i> +1 (669) 9004040</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end-nav -->
+
+    <!-- header -->
+    <header class="contact-header">
+        <h1 class="content-title">Contact us</h1>
+    </header>
+    <!-- end-header -->
+    <!-- content -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-content">
+                <div class="col-xl-6 contact-left">
+                    <h3>Wiser
+                        Group
+                        LLC</h3>
+                    <address>
+                        12021 BURBANK BLVD. UNIT108<br>
+                        VALLEY VILLAGE, CA 91607<br>
+                        Phone: +1 (669) 900-4040 <br>
+                        Phone: +1 (424) 384-0044<br>
+                        Phone: +1 (424) 384-0055<br>
+                        E-mail: <a href="mailto:info@wisergroupllc.com">info@wisergroupllc.com</a>
+                    </address>
+                </div>
+                <div class="col-xl-6 contact-right">
+                    <h3>Get in
+                        touch</h3>
+                    <form method="post" action="contact_handler.php">
+                        <input type="text" placeholder="Name" name="name" required>
+                        <input type="email" placeholder="E-mail" name="email" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit" name="sendContact" class="btn-red"><span>Submit</span></button>
+                    </form>
+                    <p id="success" class="hide"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end-content -->
+    <footer>
+        <div class="customer-block">
+            <ul>
+                <li>
+                    <a href="">Moving</a>
+                </li>
+                <li>
+                    <a href="/services">Delivery</a>
+                </li>
+                <li>
+                    <a href="">Dispatch</a>
+                </li>
+                <li>
+                    <a href="">Our Routes</a>
+                </li>
+                <li>
+                    <a href="">Career</a>
+                </li>
+                <li>
+                    <a href="">Contacts us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="container footer-content">
+                <div class="footer-slogan">
+                    <span>Wiser on-time delivery is more than<br> just a slogan — it’s the lifeblood of our<br>
+                        business.</span>
+                </div>
+                <a href="">
+                    <img src="images/footer-logo.png">
+                </a>
+                <ul class="footer-set">
+                    <li><a href="https://www.yelp.com/biz/wiser-group-los-angeles?osq=wiser+group"><i
+                                class="fab fa-yelp"></i></a></li>
+                    <li><a href="https://www.facebook.com/wisergroupllc/"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="container footer-bottom">
+            <div class="footer-copyright">
+                <span>© 2020 Wiser Group LLC</span>
+            </div>
+            <a class="footer-customer" href="">
+                Become a customer
+            </a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/smtp.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+        function validate() {
+            var username = document.getElementById('name');
+            var email = document.getElementById('email');
+            var message = document.getElementById('message');
+            if (!name.value && !email.value && !message.value) {
+                // name.style.border = "2px solid red";
+                document.getElementById("success").classList.add('show');
+                return false;
+
+            }
+
+        }
+    </script>
+    <!-- Modal -->
+    <div class="modal fade request_modal" id="requestModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Online request</h5>
+                    <!-- <p> Moving within or out of California? Moving across a state line? Or, moving internationally? Please fill out the following form and a Client Loyalty Team member will contact you shortly. </p> -->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <input type="hidden" value="" name="tarif" id="tarif">
+                        <div class="input_group">
+                            <label for="">Your name</label>
+                            <input type="text" name="username" required>
+                        </div>
+                        <div class="input_group">
+                            <label for="">Phone</label>
+                            <input type="text" name="userphone" required>
+                        </div>
+                        <div class="input_group">
+                            <label for="">E-mail</label>
+                            <input type="email" name="useremail" required>
+                        </div>
+                        <div class="input_group">
+                            <label for="">Quote</label>
+                            <textarea name="userquote"></textarea>
+                        </div>
+                        <button type="submit" name="send" class="service-button-block">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!-- action="/moving" -->

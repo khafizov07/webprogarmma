@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../Fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(../Fonts/Roboto-Italic.ttf);
+}
+
+@font-face {
+    font-family: Roboto-BoldItalic;
+    src: url(../Fonts/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Panton-BlackCaps;
+    src: url("../Fonts/Panton-BlackCaps.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Panton-BlackitalicCaps;
+    src: url("../Fonts/Panton-BlackitalicCaps.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Panton-LightCaps;
+    src: url("../Fonts/Panton-LightCaps.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Panton-LightitalicCaps;
+    src: url("../Fonts/Panton-LightitalicCaps.otf") format("opentype");
+}
